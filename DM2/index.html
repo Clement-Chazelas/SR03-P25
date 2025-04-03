@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/styles.css" rel="stylesheet" type="text/css"/>
+    <title>Page d'accueil</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1 id="form-title">Connexion</h1>  
+
+        <!-- Formulaire de connexion-->  
+        <form id="login-form">          
+            <input type="email" placeholder="Adresse e-mail" required>
+            <input type="password" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+        </form>
+
+        <!-- Formulaire d'inscription, caché par défaut--> 
+        <form id="signup-form" style="display: none;">
+            <input type="text" placeholder="Nom complet" required>
+            <input type="email" placeholder="Adresse e-mail" required>
+            <input type="password" placeholder="Mot de passe" required>
+            <button type="submit">Créer un compte</button>
+        </form>
+        <a href="#" class="link" id="toggle-link">Créer un nouveau compte</a>
+    </div>
+
+    <!-- Lien vers le script pour passer d'un form à l'autre -->
+    <script src="JS/toggleForms.js"></script>  
+</body>
+</html>

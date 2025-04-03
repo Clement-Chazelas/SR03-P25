@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/*CSS pour le formulaire de connexion et d'inscription*/
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+        
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+        
+.form-container button:hover {
+    background-color: #0056b3;
+}
+        
+.form-container .link {
+    margin-top: 10px;
+    display: block;
+    color: #007BFF;
+    text-decoration: none;
+}
+        
+.form-container .link:hover {
+    text-decoration: underline;
+}
+
+/*CSS global*/
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul.nav-left li {
+    margin-right: 20px;
+}
+
+header nav ul.nav-right {
+    margin-left: auto; 
+    padding-right: 60px; 
+}
+
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.layout {
+    display: flex;
+    width: 100%; 
+}
+
+aside {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100%; 
+    position: fixed;
+    top: 10px;
+    left: 0;
+}
+
+main {
+    flex: 1;
+    margin-left: 300px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    height: calc(100vh - 60px);     /*Essayer de modifier cte merde peut être*/
+    box-sizing: border-box;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    display: block;
+    margin: 0 auto 10px; 
+}
+
+/* Barre de recherche (Accueil admin)*/
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+
+/*Liste d'utilisateurs, liste de chats*/
+.item {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.item p {
+    margin: 0 0 10px 0;
+}
+
+.item a {
+    margin-right: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.item a:hover {
+    text-decoration: underline;
+}

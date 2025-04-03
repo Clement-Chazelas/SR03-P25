@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/styles.css" rel="stylesheet" type="text/css"/>
+    <title>Accueil Admin</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Ajouter un utilisateur</a></li>
+                <li><a href="#">Utilisateurs désactivés</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="index.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="layout">
+        <aside>
+            <h2>Informations admin</h2>
+            <div>
+                <!-- Mockups, à supprimer plus tard quand on aura un affichage dynamique -->
+                <img src="Assets/mock-avata.png" alt="Avatar utilisateur" class="avatar">
+                <p>Pseudo: <strong>Admin123</strong></p>
+                <p>Email: <strong>user@example.com</strong></p>
+            </div>
+        </aside>
+        <main>
+            <h1>Liste des utilisateurs</h1>
+            <!-- Barre de recherche -->
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher un utilisateur par pseudo..." />
+                <button>Rechercher</button>
+            </div>
+            <!-- Liste des utilisateurs -->
+            <div class="item">
+                <p>Pseudo: <strong>Utilisateur1</strong></p>
+                <a href="#">Editer</a>
+                <a href="#">Supprimer</a>
+            </div>
+            <div class="item">
+                <p>Pseudo: <strong>Utilisateur2</strong></p>
+                <a href="#">Editer</a>
+                <a href="#">Supprimer</a>
+            </div>
+            <div class="item">
+                <p>Pseudo: <strong>Utilisateur3</strong></p>
+                <a href="#">Editer</a>
+                <a href="#">Supprimer</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
